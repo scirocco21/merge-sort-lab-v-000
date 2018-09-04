@@ -7,8 +7,13 @@ function merge(firstHalf, secondHalf){
   let sorted = []
   let currentMin;
   while(firstHalf.length != 0 && secondHalf.length != 0){
-    let currentMin = findMinAndRemoveSorted(firstHalf, secondHalf)
-    sorted.push(currentMin)
+    if findMinAndRemoveSorted(firstHalf) < findMinAndRemoveSorted(secondHalf)
+      currentMin = findMinAndRemoveSorted(firstHalf)
+      sorted.push(currentMin)
+    } else {
+      currentMin = findMinAndRemoveSorted(secondHalf)
+      sorted.push(currentMin)
+    }
   }
   return sorted.concat(firstHalf).concat(secondHalf)
 }
