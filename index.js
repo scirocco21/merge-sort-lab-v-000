@@ -1,5 +1,5 @@
-function findMinAndRemoveSorted(sortedArray){
-  return sortedArray.shift()
+function findMinAndRemoveSorted(array){
+  return array.shift()
 }
 
 
