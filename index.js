@@ -1,4 +1,4 @@
-function findMinAndRemove(firstHalf, secondHalf){
+function findMinAndRemoveSorted(firstHalf, secondHalf){
   let minfirstHalf = firstHalf[0]
   let minsecondHalf = secondHalf[0]
 
